@@ -1,7 +1,6 @@
 package basic.scripts.practice;
 
 import java.time.Duration;
-import java.util.Arrays;
 import java.util.List;
 
 import org.openqa.selenium.By;
