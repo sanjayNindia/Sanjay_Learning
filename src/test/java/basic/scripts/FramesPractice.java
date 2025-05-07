@@ -1,15 +1,10 @@
 package basic.scripts;
 
-import java.time.Duration;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class FramesPractice {
     public static void main(String[] args) {
@@ -19,7 +14,7 @@ public class FramesPractice {
         driver.manage().window().maximize();
         driver.get("https://www.hyrtutorials.com/p/frames-practice.html");
 
-        WebDriverWait wait  = new WebDriverWait(driver, Duration.ofSeconds(5));
+       
 
         driver.switchTo().frame(driver.findElement(By.cssSelector("iframe[id='frm1']")));
         System.out.println("------------Fetched The Total Frames Availble-------------");
