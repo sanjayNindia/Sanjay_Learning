@@ -1,4 +1,4 @@
-package basic.scripts;
+package basic.scripts.practice;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -13,8 +13,6 @@ public class FramesPractice {
 
         driver.manage().window().maximize();
         driver.get("https://www.hyrtutorials.com/p/frames-practice.html");
-
-       
 
         driver.switchTo().frame(driver.findElement(By.cssSelector("iframe[id='frm1']")));
         System.out.println("------------Fetched The Total Frames Availble-------------");
