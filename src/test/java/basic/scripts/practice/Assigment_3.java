@@ -1,7 +1,5 @@
 package basic.scripts.practice;
 
-import javax.swing.Action;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -30,9 +28,7 @@ public class Assigment_3 {
 
         if(alertText.contains(radioText)){
             System.out.println("Script Executed Sucessfully");
-        }
-
-           
+        }   
     }
     
 }
